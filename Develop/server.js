@@ -6,7 +6,7 @@ const api = require('./routes/index.js');
 const PORT = process.env.port || 3001;
 const app = express();
 
-// Import middleware
+// Import custom middleware
 app.use(clog);
 
 // Middleware for parsing JSON and urlencoded form data
@@ -31,5 +31,5 @@ app.get('*', (req, res) =>
 );
 
 app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
+  console.log(`App listening at http://localhost:${PORT}.`)
 );

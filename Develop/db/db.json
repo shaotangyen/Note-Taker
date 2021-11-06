@@ -1,7 +1,12 @@
 [
     {
-        "id": "b4f8",
+        "id": "9cf8",
         "title": "Hello 1",
-        "text": "hello hello"
+        "text": "hello\nworld"
+    },
+    {
+        "id": "7c7b",
+        "title": "Hello 3",
+        "text": "hello 3\nhello 3 line 2"
     }
 ]
