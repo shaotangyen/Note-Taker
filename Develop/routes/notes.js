@@ -23,21 +23,18 @@ noted.get("/:id", (req, res) => {
 
 // POST Route for a new note
 noted.post("/", (req, res) => {
-
     console.log(req.body);
     const { title, text } = req.body;
-
     if (req.body) {
         const newNote = {
             id: uuid(),
             title,
             text,
         };
-
         readAndAppend(newNote, "./db/db.json");
         res.json(`Note added.`);
     } else {
-        res.error("There was a problem adding a note.");
+        res.error("Error to add a note.");
     }
 });
 
@@ -48,13 +45,11 @@ noted.delete("/:id", (req, res) => {
         .then((data) => JSON.parse(data))
         .then((json) => {
             // Make a new array of all notes except the one with the ID provided in the URL
-            console.log(json);
             const result = json.filter((note) => note.id !== noteId);
             // Save that array to the filesystem
             writeToFile("./db/db.json", result);
             // Respond to the DELETE request
-            res.json(`Your note with id: ${noteId} has been deleted`);
-
+            res.json(`Note id: ${noteId} is deleted`);
         });
 });
 
