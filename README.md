@@ -21,7 +21,7 @@ npm express and uuid is required. Use "npm i express" and then "npm start" to te
 
 ## Design
 
-* All test files are in the __ test __ folder.
+* All test files are in the __ test __ folder..
 * All four classes Employee, Manager, Engineer, Intern are in the lib folder
 * A mock up code (for referenfce) is in the Assets folder
 * all html text codes are in the src folder
