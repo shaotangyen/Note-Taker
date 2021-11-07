@@ -1,12 +1,12 @@
 [
     {
-        "id": "9cf8",
-        "title": "Hello 1",
-        "text": "hello\nworld"
+        "id": "0998",
+        "title": "To do list today",
+        "text": "1. breakfast\n2. homework\n3. brunch w friends"
     },
     {
-        "id": "7c7b",
-        "title": "Hello 3",
-        "text": "hello 3\nhello 3 line 2"
+        "id": "3b03",
+        "title": "Note 2 example",
+        "text": "This is a 2nd note example"
     }
 ]
