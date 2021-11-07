@@ -15,29 +15,32 @@ This is a Note Taker. The app uses a middleware to connect front end pages and b
 
 ## Setup
 
-npm express and uuid is required. Use "npm i express" and then "npm start" to test it on the localhost:3001. Or open the heroku deployed site link.
+npm express and uuid is required to be installed first. Type "npm start" to run it on local machine on localhost:3001. Or open the heroku deployed site [link](https://quiet-eyrie-97635.herokuapp.com/).
 
 <a name="design"></a>
 
 ## Design
 
-* All test files are in the __ test __ folder..
-* All four classes Employee, Manager, Engineer, Intern are in the lib folder
-* A mock up code (for referenfce) is in the Assets folder
-* all html text codes are in the src folder
-* All prompt functions are in the index.js file
+* All files are stored in a structured folder
+* Loads server.js first when the app starts running. It listens to "/", "/notes", or wildcard "*"
+* When user loads the index.html and clicks on the "Get started", it loads the notes.html successfully
+* In the notes.html, it listens to user's input to create a note, store a note to the db.json file, or delete a note from the db.json file
+* In the notes.html, when user clicks on a new note, it creates an empty note. When a user clicks on a existing note, it displays the note content
 
 <a name="links"></a>
 
 ## Links
 
-Please check out [Github Page](https://github.com/shaotangyen/team-profile-generator) for the app.
+Please check out [Heroku Page](https://quiet-eyrie-97635.herokuapp.com/) for the app.
+Or check out [Github Page](https://github.com/shaotangyen/team-profile-generator) for the code.
 
 <a name="demo"></a>
 
 ## Demo
 
-The following video demonstrates the Team Profile Generator: [Click to watch](https://drive.google.com/file/d/13wR_s-3vXr1w8Dt7OVoVuCqu-J7j-nIy/view?usp=sharing).
+The following animation demonstrates the Note Taker functionality:
+
+![Note Taker functionality](./Assets/demo.gif)
 
 <a name="license"></a>
 
