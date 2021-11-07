@@ -8,6 +8,7 @@ noted.get("/", (req, res) => {
     readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
+// GET Route to restrive a note by an id
 noted.get("/:id", (req, res) => {
     const noteId = req.params.id;
     readFromFile("./db/db.json")

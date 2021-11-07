@@ -32,7 +32,7 @@ npm express and uuid is required to be installed first. Type "npm start" to run 
 ## Links
 
 Please check out [Heroku Page](https://quiet-eyrie-97635.herokuapp.com/) for the app.
-Or check out [Github Page](https://github.com/shaotangyen/team-profile-generator) for the code.
+Or check out [Github Page](https://github.com/shaotangyen/Note-Taker) for the code.
 
 <a name="demo"></a>
 
